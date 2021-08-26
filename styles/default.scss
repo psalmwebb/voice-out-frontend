@@ -1,0 +1,135 @@
+
+.index{
+    background-color:hsl(218, 71%, 7%);
+    color:white;
+
+    nav{
+       position:fixed;
+       width:100%;
+       top:20px;
+       left:30px;
+
+        span{
+            color:skyblue;
+            font-family:cursive;
+            font-size:30px;
+        }
+    }
+
+    form{
+        position:absolute;
+        height:25%;
+        top:40%;
+        z-index:100;
+    }
+
+    .cover{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.9);
+    }
+
+    .welcomeDiv{
+        background-color:hsl(218, 71%, 7%);
+
+        h1{
+            color:skyblue;
+            font-size:60px;
+            font-family:"Trebuchet MS";
+            position:relative;
+            // border:1px solid skyblue;
+        }
+
+        h1:before{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            background-color:hsl(218, 71%, 7%);
+            width:1%;
+            height:100%;
+            animation:moveRev 4s infinite linear alternate;
+        }
+
+        h1:after{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            background-color:hsl(218, 71%, 7%);
+            width:1%;
+            height:100%;
+            animation:move 5s infinite linear alternate;
+        }
+
+        @keyframes move{
+            from{
+              left:0;
+            }
+            to{
+              left:100%;
+            }
+        }
+
+        @keyframes moveRev{
+            from{
+              left:100%;
+            }
+            to{
+              left:0;
+            }
+        }
+    }
+
+    .social-links-div{
+        background-color:hsl(218, 71%, 7%);
+        // border:2px solid grey;
+
+        
+        .or{
+            background-color:hsl(218, 71%, 7%);
+            font-weight:bold;
+
+            span{
+                background-color:skyblue;
+                color:black;
+            }
+        }
+
+        .join-quick{
+            cursor:pointer;
+        }
+
+        .social-links{
+            background-color:hsl(218, 71%, 7%);
+            font-weight:bold;
+            cursor:pointer;
+            transition:all 0.2s;
+            border-width:2px !important;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            span{
+                font-size:25px;
+                margin-right:5px;
+                color:skyblue;
+            }
+        }
+
+        .social-links:hover{
+            transform:scale(0.95);
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+
+
+    .social-links-div{
+        width:100%;
+    }
+}

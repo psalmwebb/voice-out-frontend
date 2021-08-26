@@ -1,0 +1,55 @@
+/* 
+.layout{
+    background-color:rgba(11,10,34,1);
+} */
+
+@mixin roomDivStyle(){
+    min-width:80px;
+    min-height:80px;
+    position:relative;
+}
+
+main{
+  position:relative;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  nav{
+    position:fixed;
+    width:100%;
+    height:7%;
+  }
+
+  form{
+    position:fixed;
+    top:0;
+    background:ghostwhite;
+    z-index:100;
+    border-radius:3px;
+  }
+
+  footer{
+      width:100%;
+      height:8%;
+
+      div{
+        // border:1px solid black;
+
+        .controls{
+          font-size:30px;
+          cursor:pointer;
+          transition:all 0.2s;
+        }
+        
+        .controls:active{
+          transform:scale(0.90);
+        }
+      }
+  }
+
+}
+
+

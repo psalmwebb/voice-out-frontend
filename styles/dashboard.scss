@@ -1,0 +1,57 @@
+
+  .dashboard{
+  
+    background-color:hsl(218, 71%, 7%);
+    color:black;
+
+    nav{
+      position:fixed;
+      position:relative;
+      top:10px;
+      left:0;
+      width:100%;
+      // border:1px solid white;
+      display:flex;
+      justify-content:flex-end;
+      padding:0 10px;
+
+      span{
+        font-weight:bold;
+      }
+
+      img{
+        // position:absolute;
+        height:100%;
+      }
+    }
+    
+    .row{
+      background-color:hsl(218, 71%, 7%);
+      margin-top:30px;
+
+      .content{
+        border-radius:5px;
+
+        .room-found{
+          cursor:pointer;
+          transition:all 0.2s;
+        }
+
+        .room-found:hover{
+          background-color:white;
+        }
+      }
+    }
+  
+  
+  .cover{
+      position:fixed;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background-color:rgba(0,0,0,0.8);
+      z-index:10;
+    }
+  
+}
