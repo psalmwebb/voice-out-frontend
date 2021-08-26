@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import {findUser,findRoom} from "../utils";
 import { addRoomDetailsObj } from '../actions';
 
-const URL:any = "http://localhost:5000";
+const URL:any = "https://voice-out-backend.herokuapp.com";
 
 const Home: NextPage = () => {
 

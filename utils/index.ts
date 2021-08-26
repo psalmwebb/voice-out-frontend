@@ -48,7 +48,7 @@ export function removeAudioObj(audioDivRef:any,remoteUserId:string){
 }
 
 
-const URL = "http://localhost:5000";
+const URL = "https://voice-out-backend.herokuapp.com";
 
 export async function saveRoomDetailsToDB(roomDetails:Object)
 {
