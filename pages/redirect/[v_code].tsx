@@ -10,7 +10,9 @@ export default function AuthRedirect(){
       
       if(router.query.v_code){
 
-         let token = router.query.v_code.split("__")[1];
+         let token:any = router.query.v_code
+         
+         token = token.split("__")[1];
 
          window.localStorage.setItem("v-o-u",token)
       }
