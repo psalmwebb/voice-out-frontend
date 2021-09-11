@@ -27,9 +27,9 @@ type stateType = {
     }
 }
 
-// const URL:any = "https://voice-out-backend.herokuapp.com";
+const URL:any = "https://voice-out-backend.herokuapp.com";
 
-const URL:any = 'http://localhost:5000';
+// const URL:any = 'http://localhost:5000';
 
 export default function Room(){
 
