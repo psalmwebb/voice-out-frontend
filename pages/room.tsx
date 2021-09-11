@@ -27,7 +27,9 @@ type stateType = {
     }
 }
 
-const URL:any = "https://voice-out-backend.herokuapp.com";
+// const URL:any = "https://voice-out-backend.herokuapp.com";
+
+const URL:any = 'http://localhost:5000';
 
 export default function Room(){
 
@@ -75,7 +77,7 @@ export default function Room(){
 
                 addAudioObj(audioDivRef,userStream,obj,false);
 
-                console.log("connected to peer server...")
+                console.log("connected to peer server...");
 
                 dispatch(addPeerObj(peer))
                 

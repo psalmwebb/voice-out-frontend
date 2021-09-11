@@ -49,6 +49,8 @@ export function removeAudioObj(audioDivRef:any,remoteUserId:string){
 
 
 const URL = "https://voice-out-backend.herokuapp.com";
+// const URL:any = 'http://localhost:5000';
+
 
 export async function saveRoomDetailsToDB(roomDetails:Object)
 {
@@ -101,9 +103,15 @@ export async function findRoom(roomId:string)
 
 export async function findUser()
 {
+    let token:string = window.localStorage.getItem("v-o-u")!
+
+
     const res = await fetch(`${URL}/find-user`,{
         method:"get",
-        credentials:"include"
+        credentials:"include",
+        headers:{
+          "authorization":token ? token : ""
+        }
     })
 
     return await res.json();

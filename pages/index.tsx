@@ -8,6 +8,8 @@ import { addRoomDetailsObj } from '../actions';
 
 const URL:any = "https://voice-out-backend.herokuapp.com";
 
+// const URL:any = "http://localhost:5000";
+
 const Home: NextPage = () => {
 
   const router:NextRouter = useRouter();
@@ -49,7 +51,6 @@ const Home: NextPage = () => {
   async function handleQuickJoin(e:any)
   {
     e.preventDefault();
-
 
     const roomDetails = await findRoom(inputValue.trim());
 
