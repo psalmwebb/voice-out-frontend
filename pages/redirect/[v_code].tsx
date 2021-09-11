@@ -15,6 +15,8 @@ export default function AuthRedirect(){
          token = token.split("__")[1];
 
          window.localStorage.setItem("v-o-u",token)
+
+         router.push("/dashboard")
       }
        
     })
